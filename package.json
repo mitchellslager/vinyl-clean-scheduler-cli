@@ -1,0 +1,37 @@
+{
+  "name": "vinyl-clean-scheduler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node esbuild.js",
+    "dev": "pnpm build && node build/cli.js",
+    "lint": "eslint . --ext .ts",
+    "clean": "rm -rf build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Mitchell Slager",
+  "license": "ISC",
+  "dependencies": {
+    "@inquirer/prompts": "^1.0.3",
+    "chalk": "^5.2.0",
+    "dotenv": "^16.0.3",
+    "esbuild": "^0.17.3",
+    "node-fetch": "^3.3.1",
+    "yargs": "^17.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/yargs": "^17.0.20",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-import-resolver-typescript": "^3.5.3",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.3",
+    "typescript": "*"
+  }
+}

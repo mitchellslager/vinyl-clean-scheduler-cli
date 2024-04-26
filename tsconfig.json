@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "module": "es2022",
+    "preserveConstEnums": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "rootDir": ".",
+    "target": "es2022",
+    "outDir": "./build",
+    "types": ["node"],
+    "paths": {
+      "~scripts/*": ["./scripts/*"],
+      "~utils/*": ["./utils/*"],
+      "~types/*": ["./types/*"]
+    }
+  },
+  "exclude": ["node_modules", "build"]
+}
